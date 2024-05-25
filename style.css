@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-size: 64.5%;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0.5rem;
+    background-color: #F5F5F7;
+}
+
+header .navbar img {
+    width: 1rem;
+}
+
+header .navbar nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header .navbar nav ul li {
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000 ;
+}
+
+
+
+.grid {
+    display: grid;
+}
+
+.grid-two {
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 3rem; 
+}
+
+.grid-three {
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.hero .grid .hero-heading {
+    font-size: 3rem;
+    padding-left: 5rem;
+    color: #99999F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: #000;
+    font-weight: 550;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero .grid img {
+   padding-top: 3rem;
+   width: 100%;
+   height: auto;
+   transform: scale(0.7);
+   overflow: hidden;
+   padding-right: 5rem;
+}
+
+.rowimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+    padding-left: 3.8rem;
+
+}
+
+.rowimg img {
+    width: 100%;
+}
+.rowimg figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem; 
+}
+
+.rowimg figure figcaption {
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+
+
+.mobile-section,.section-help .grid {
+    padding-left: 5rem;
+}
+.mobile-section, .grid-three figure img{
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+.mobile-section .grid figure {
+    position: relative;
+}
+
+.mobile-section .grid-three figure figcaption{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    left: 0;
+}
+
+.mobile-section .grid-three figure figcaption span {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    color: #99999F;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.section-heading{
+    font-size: 2rem;
+    padding: 4rem 5rem 2rem;
+}
+
+.mobile-section .grid-three figure figcaption .little {
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.section-help figure{
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.section-help .grid-three figure figcaption span {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    color: #99999F;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.section-help .grid-three figure figcaption .little{
+    position: absolute;
+    top: 5rem;
+    left: 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+figure:hover {
+    transition: all 0.4s linear;
+    transform: scale(1.01);
+}
+
+.hero .hover {
+    display: flex;
+    position: absolute;
+    justify-content: start;
+    align-items: start;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    gap: 5rem;
+    width: 100%;
+    background-color: #F5F5F7;
+    z-index: 100;
+    visibility: hidden;
+    padding: 3rem;
+}
+
+.hero .hover .col1,.col2,.clo3 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-weight: 400;
+}
+
+.hero .hover .col1 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 5rem;
+}
+
+#hero1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
